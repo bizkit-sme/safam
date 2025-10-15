@@ -30,6 +30,10 @@
 	     width: 80px;
 	 }
 
+	 #LOGO_TEXT{
+	     font-weight: bolder;
+	 }
+
 	 /* High-contrast CTA Button Styling */
          .btn-cta {
              background-color: var(--color-accent);
@@ -94,11 +98,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex justify-between items-center py-4">
                     <!-- Logo/Branding -->
-		    <img src="logo.png" id="LOGO">
+		    <a href="index.html">
+			<img src="logo.png" id="LOGO">
                     </a>
-
+		    <h1 id="LOGO_TEXT">SAFAM TRAVELLING & SAFARIS</h1>
                     <!-- Desktop Navigation -->
                     <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+			<a href="gallery.html" class="nav-link py-1 transition">Gallery</a>
 			<a href="#tours" class="nav-link py-1 transition">Our Tours</a>
 			<a href="#pricing" class="nav-link py-1 transition">Fees & Rentals</a>
 			<a href="#booking" class="nav-link py-1 transition">Consultation</a>
@@ -120,6 +126,7 @@
             <!-- Mobile Menu Dropdown -->
             <nav id="mobile-menu" class="md:hidden bg-gray-50 border-t border-gray-200 hidden">
 		<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+		    <a href="gallery.html" class="nav-link text-gray-700 w-full text-center py-3 border-b border-gray-200" onclick="toggleMenu()">Gallery</a>
                     <a href="#tours" class="nav-link text-gray-700 w-full text-center py-3 border-b border-gray-200" onclick="toggleMenu()">Our Tours</a>
                     <a href="#pricing" class="nav-link text-gray-700 w-full text-center py-3 border-b border-gray-200" onclick="toggleMenu()">Fees & Rentals</a>
                     <a href="#booking" class="nav-link text-gray-700 w-full text-center py-3 border-b border-gray-200" onclick="toggleMenu()">Consultation</a>
@@ -133,13 +140,13 @@
             <!-- Hero Section -->
             <section class="hero-bg py-24 md:py-40 text-white shadow-xl">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-black bg-opacity-40 p-8 rounded-xl">
-                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight uppercase">
-			SAFAM  Travelling & Safaris
-                    </h1>
+                    <h2 class="text-4xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight uppercase">
+			Where Visitors Become Families
+                    </h2>
                     <p class="text-lg sm:text-2xl font-light mb-8 max-w-4xl mx-auto">
 			We plan your perfect tour based on <strong>your vacation period</strong> and our availability. Start with a consultation to build your itinerary.
                     </p>
-                    <a href="#booking" class="btn-cta inline-flex items-center justify-center text-xl">
+                    <a href="https://wa.me/264812265620" class="btn-cta inline-flex items-center justify-center text-xl">
 			<i data-lucide="calendar" class="w-6 h-6 mr-3"></i>
 			Book Initial Consultation (N$1500)
                     </a>
@@ -288,7 +295,7 @@
                             <ul class="space-y-1 text-gray-700 list-disc pl-5">
 				<li>Modern, reliable 4x4 capability.</li>
 				<li>Ideal for day trips and rugged roads.</li>
-				<li>**Excludes** all camping equipment.</li>
+				<li><b>Excludes</b> all camping equipment.</li>
                             </ul>
 			</div>
 
@@ -309,11 +316,11 @@
             <!-- Booking/Quote Form Section -->
             <section id="booking" class="py-20 bg-light border-t border-gray-300">
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-black text-primary mb-6 text-center uppercase">
+                    <h2 class="text-white text-3xl font-black text-primary mb-6 text-center uppercase" style="text-shadow: 1px 1px 1px #000000;">
 			Request Your Consultation
                     </h2>
-                    <p class="text-center text-lg text-gray-700 mb-10">
-			To start the process, provide your planned **vacation period**. We will check availability and prepare a custom quotation for you.
+                    <p class="text-center text-lg text-white mb-10" style="text-shadow: 1px 1px 1px #000000;">
+			To start the process, provide your planned <b>vacation period</b>. We will check availability and prepare a custom quotation for you.
                     </p>
 
                     <form id="booking-quote-form" class="space-y-6 p-8 border-4 border-primary bg-white shadow-2xl rounded-lg">
@@ -387,7 +394,7 @@
 			</div>
 			<div class="flex items-center">
                             <i data-lucide="phone" class="w-6 h-6 mr-3 text-accent"></i>
-                            <span class="font-bold">Phone:</span> <a href="tel:+264812265620" class="ml-2 hover:underline">+264 81 226 5620</a>
+                            <span class="font-bold">Whatsapp:</span> <a href="https://wa.me/264812265620" class="ml-2 hover:underline">+264 81 226 5620</a>
 			</div>
                     </div>
 		</div>
@@ -397,8 +404,8 @@
 
 	<!-- Footer -->
 	<footer class="py-6 bg-gray-900 text-gray-400 text-sm text-center">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<p>&copy; 2025 Explorer Tours. Built by <a href="https://bizkit.network">Bizkit Network</a>. All rights reserved.</p>
+	    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<p>&copy; 2025 SAFAM Travelling & Safaris<br> Hand coded with ❤️ by <a href="https://bizkit.network" style="color: cyan">Bizkit Network</a></p>
             </div>
 	</footer>
 
